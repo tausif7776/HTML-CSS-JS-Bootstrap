@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body class="container-fluid">
+     <h2>TextBox, Email, Number, Password</h2>
+     <form class="w-25">
+
+         <dl>
+            <dt>User Name</dt>
+            <dd><input type="text" class="form-control"></dd>
+            <dt>Password</dt>
+            <dd><input type="password" class="form-control"></dd>
+            <dt>Email</dt>
+            <dd><input type="email" class="form-control"></dd>
+            <dt>Age</dt>
+            <dd><input type="number" class="form-control"></dd>
+        </dl>
+
+
+
+
+<hr size="=3">
+
+        <h2>Color, Range, File, Select </h2>
+        <dl>
+            <dt>Select Color</dt>
+            <dd><input type="color" class="form-control-color"></dd>
+            <dt>Range</dt>
+            <dd><input type="range" class="form-range"></dd>
+            <dt>Your Photo</dt>
+            <dd><input type="file" class="form-control-file"></dd>
+            <dt>Your City</dt>
+            <dd>
+                <select class="form-select">
+                    <option>Delhi</option>
+                    <option>Hydrabad</option>
+                </select>
+            </dd>
+        </dl>
+
+<hr size="3">
+
+        <div>
+            <label class="form-label">Gender</label>
+            <div class="form-switch">
+                     <input type="radio" class= " form-check-input" name="Gender"><label class="form-check-label">Male</label> <br>
+                    <input type="radio" class= " form-check-input" name="Gender"><label class="form-check-label">Female</label>
+            </div>
+        </div>
+        <div>
+            <label>Courses</label>
+            <div>
+                <ul class="form-switch">
+                    <li><input type="checkbox" class="form-check-input"><label for="">Java</label></li>
+                      <li><input type="checkbox" class="form-check-input"><label for="">.NET</label></li>
+                        <li><input type="checkbox" class="form-check-input"><label for="">PHP</label></li>
+                </ul>
+            </div>
+        </div> 
+
+     </form>
+
+
+<hr size="3">
+
+
+
+    <h2>Amazon Search</h2>
+   
+    <form class="w-50 input-group">
+        <select class="input-group-text">
+            <option>All</option>
+            <option>Mobiles</option>
+        </select>
+        <input type="text" placeholder="Search Amazon.in" class="form-control">
+        <button class="btn btn-warning"><span class="bi bi-search"></span></button>
+
+    </form>
+
+
+
+<hr size="3">
+
+
+    <h2>Netflix Register</h2>
+    <form class="w-50 input-group input-group-lg bg-black p-4" >
+        <input type="email" class="form-control" placeholder="your email address">
+        <button class="btn btn-danger ms-2">Get Started<span class="bi bi-chevron-right"></span></button>
+    </form>
+          
+<hr size="3">
+
+
+  <h2>Input Group</h2>
+  <form class="w-50 in">
+   <div class="input-group">
+     <span class="bi bi-person-fill input-group-text"></span>
+    <input type="text" class="form-control" placeholder="User Name">
+    <span class="bi bi-square input-group-text"></span>
+   </div>
+
+   <div class="mt-2 input-group">
+     <span class="bi bi-key-fill input-group-text"></span>
+    <input type="password" class="form-control"  placeholder="Your Password">
+    <span class="bi bi-square input-group-text"></span>
+   </div>
+
+
+   <div class="mt-2 input-group">
+    <span class="input-group-text">&#8377;</span>
+    <input type="text" class="form-control">
+    <span class="input-group-text">.00</span>
+   </div>
+  </form>    
+</body>
+</html>

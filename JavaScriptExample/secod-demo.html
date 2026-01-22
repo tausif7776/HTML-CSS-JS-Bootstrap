@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bodyload(){
+            window.document.images[0].src="../public/images/fashion2.webp"
+            window.document.forms[0].elements[1].value = "Register";
+            window.document.forms[1].elements[1].value = "Login"
+        }
+
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img border="1" width="100" height="100">
+    </div>
+    <div>
+        <h3>Register</h3>
+        <form>
+            User Name : <input type="email"> <input type="button"> 
+        </form>
+    </div>
+    <div>
+        <h3>Login</h3>
+        <form>
+            Mobile : <input type="text"> <input type="button">
+        </form>
+    </div>
+</body>
+</html>

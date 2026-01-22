@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid bg-dark text-white">
+    <h1 class="text-center">EMI Calculator</h1>
+    <div class="m-4 p-4 bg-white text-dark">
+           <div class="row">
+                 <div class="col">
+                        Amount you need &#8377; <input type="text" value = "10,000.00" size="10">
+                 </div>
+                 <div class="col">
+                        for <input type="text" value="1" size="4"> Years
+                 </div>
+                 <div class="col">
+                       Interest rate <input type="number" min="10.32" value="10.32" max="18.32"> %
+                 </div>  
+
+           </div>
+           <div class="row mt-4">
+                <div class="col">
+                     <input type="range" val="10000" min="100000" max="1000000" class="form-range">
+                </div>
+                 <div class="col">
+                      <input type="range" value="2" min="1" max="5" class="form-range">
+                </div>
+                 <div class="col">
+                         <input type="range" min="10.32" max="18.32"  class="form-range">
+                </div>
+           </div>
+           <div class="row">
+                 <div class="col">
+                     <span class="float-start">&#8377; 10,000</span>
+                     <span class="float-end">&#8377; 40,00,000</span>
+                 </div>
+                 <div class="col">
+                     <span class="float-start">1</span>
+                     <span class="float-end">5</span>
+
+                 </div>
+                 <div class="col">
+                      <span class="float-start">10.32%</span>
+                     <span class="float-end">18.32%</span>
+                 </div>
+
+           </div>
+           <div class="row">
+                <div class="col text-end">
+                      <button class="btn btn-primary">Calculate</button>
+                </div>
+
+           </div>
+    </div>
+</body>
+</html>

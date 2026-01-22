@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:required+span{
+            display: inline;
+            color: red;
+        }
+        input+span{
+            display: none;
+        }
+        input:required{
+            border: 2px solid red;
+        }
+        input:optional{
+            border: 2px solid goldenrod;
+        }
+        #Age:in-range+div{
+            display: none;
+        }
+        #Age:out-of-range+div{
+            display: block;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" id="UserName">
+            <span>*</span>
+        </dd>
+        <dt>Password</dt>
+        <dd>
+            <input type="password" id="Password" required>
+            <span>*</span>
+        </dd>
+        <dt>Age</dt>
+        <dd>
+            <input type="number" id="Age" min="15" max="30" value="22">
+            <div>Age 15 to 30 only</div>
+        </dd>
+    </dl>
+    <button>Register</button>
+</body>
+</html>

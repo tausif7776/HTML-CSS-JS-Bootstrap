@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       #UserName+div{
+        display: none;
+       }
+       #UserName:focus+div{
+        display: block;
+       }
+       #Password+div{
+        display: none;
+       }
+       #Password:focus+div{
+        display: block;
+        color: red;
+       }
+       #UserName:read-only{
+        cursor: not-allowed;
+       }
+       button:disabled{
+        background-color: gold;
+        color: black;
+       }
+    
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+       <dd>
+         <input type="text" id="UserName" value="john" readonly>
+        <div>User Name Required</div>
+       </dd>
+       <dt>password</dt>
+       <dd>
+          <input type="password" id="Password">
+          <div>password 4 to 15 chars atleast one uppercase letter.</div>
+       </dd>
+    </dl>
+
+    <button disabled>Register</button>
+</body>
+</html>

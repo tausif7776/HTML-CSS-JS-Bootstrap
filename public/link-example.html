@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .topic{
+          width: 200px;
+          box-shadow: 3px 3px 3px gray;
+          padding: 5px;
+          border: 1px solid gray;
+          margin: 10px;
+        }
+        .topic:target{
+            background-color: limegreen;
+            color: white;
+            border-radius: 100px;
+            height: 200px;
+            text-align: center;
+        }
+        main{
+          display: flex;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        li{
+            margin-left: 100px;
+        }
+        li a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body alink="red" vlink="gray">
+
+    <nav>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">Java Script</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="topic" id="html">
+            <h2>HTML</h2>
+            <p>It is a markup language.</p>
+        </div>
+        <div class="topic" id="css">
+             <h2>CSS</h2>
+             <p>It defines Styles</p>
+        </div>
+        <div class="topic" id="js">
+              <h2>Java Script</h2>
+              <p>It manipulates DOM</p>
+        </div>
+    </main>
+</body>
+</html>

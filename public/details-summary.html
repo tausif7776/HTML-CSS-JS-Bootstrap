@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .home{
+           background-color: aqua;
+           color: black;
+           padding: 20px;
+           font-size: 35px;
+        }
+        details span{
+          display: block;
+          margin-bottom: 20px;
+          background-color: darkcyan;
+          color: white;
+          padding: 5px;
+          width: 100px;
+          margin-left: 20px;
+        }
+        details div{
+            display: block;
+            margin-bottom: 20px;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            width: 50vw;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .sum{
+            background-color: red;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="home">Home</div>
+        <div>
+            <details open>
+                <summary>Electronics</summary>
+                <span>Mobiles</span>
+                <span>Television</span>
+                <span>Watches</span>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary>Footware</summary>
+                <span>Casuals</span>
+                <span>Sneakers</span>
+                <span>Boots</span>
+            </details>
+        </div>
+    </nav>
+    <hr>
+
+    <details>
+        <summary class="sum">What is Netflix ?</summary>
+        <div>
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+        </div>
+    </details>
+    <details>
+        <summary class="sum">Is Netflix good for Kids ?</summary>
+        <div>
+            Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+        </div>
+    </details>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!-- <script>
+    document.write("Hello !" + prompt("Enter Your Name")+"<br>");
+     document.write("Hii " + prompt("Enter Your Name")+"Welcomr to JavaScript");
+    
+</script> -->
+
+
+<!-- <script>
+    var price = 43523.435;
+    document.write((price).toLocaleString('en-IN', {
+        style : 'currency',
+        currency: 'INR'
+    }));
+</script> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyMobile(){
+            var mobile = document.getElementById("txtMobile").value;
+            var mobileError = document.getElementById("mobileError");
+            if(mobile==""){
+                mobileError.innerHTML = "Mobile Required";
+            } else {
+                mobileError.innerHTML = "Mobile Verified";
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Enter Mobile</dt>
+        <dd><input type="text" id="txtMobile" onblur="VerifyMobile()"></dd>
+        <dd id="mobileError"></dd>
+    </dl>
+</body>
+</html>

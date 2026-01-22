@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+              padding: 20px;
+              background-color: rgb(74, 69, 69);
+              color: white;
+
+        } 
+        nav span{
+             margin-right: 10px;
+             font-weight: bold;
+        }
+        p{
+            margin-top: -3px;
+            font-weight: 900;
+            color: orangered;
+            font-size: 25px;
+        }
+        .search span{
+           margin-left: 20px;
+        }
+       .account{
+            border: 1px solid red;
+            border: none;
+           line-height:40px;
+            width: 120px;
+            text-align: center;
+        }
+        .container{
+            background-color: whitesmoke;
+            border: 2px solid black;
+            border: none;
+            height: 300px;
+            width: 430px;
+            padding: 20px;
+            margin-left: 25px;
+            margin-bottom: 25px;
+            margin-right: 20px;
+        }
+        .main-container{
+            display: flex;
+        }
+        .container p{
+           font-size: 15px;
+        
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <p> ORACLE</p>
+
+        <nav>
+            <span>Products</span>
+            <span>Industries</span>
+            <span>Resources</span>
+            <span>Customers</span>
+            <span>Partners</span>
+            <span>Developers</span>
+            <span>Company</span>
+        </nav>
+
+        <div class="search">
+            <span class="bi bi-search"></span>
+            <span><img src="../public/images/flag.webp" alt="notfound" height="20" width="50"></span>
+           <span class="bi bi-person account"> view Accounts</span>
+            <span class="bi bi-messenger"> Contact Sales</span>
+        </div>
+    </header>
+    <section>
+        <img src="../public/images/hero.jpg" width="100%" height="400" >
+        <hr><hr> <br>
+       <div class="main-container">
+         <div class="container">
+            <h2>Teladoc Health gains trusted <br> insights with Oracle Fusion <br> Data Intelligence</h2> <br>
+            Analytics service helps telemedicine company <br>
+            make faster, more reliable financial decisions
+            across operations in more than 100 countries.<br>
+            <img src="../public/images/new1.avif" alt="" height="112"> <br>
+            <a href="#">Read Teladoc’s story</a>
+              <hr size="3" color="green"><hr>
+        </div>
+
+         <div class="container">
+            <h2>DHL Supply Chain <br> consolidates ERP systems <br> with Oracle Fusion Cloud</h2> <br> 
+            Standardized finance processes help
+            logistics leader deliver more
+            consistent service and performance. <br>
+            <img src="../public/images/new2.avif" alt=""> <br>
+            <a href="#">Read DHL’s story</a>
+            <hr size="3" color="green"><hr>
+        </div>
+
+         <div class="container">
+           <h2>Oracle Health Clinical AI <br> Agent lightens the <br>workload for AtlantiCare <br> clinicians</h2>
+           “Ambient listening” records key
+           elements of provider-patient
+           conversations, simplifying EHR <br>updates.<br>
+            <img src="../public/images/new3.avif" alt="" height="110"><br>
+            <a href="#">Read AtlantiCare’s story</a>
+             <hr size="3" color="green"><hr>
+        </div>
+
+       </div>
+       
+    </section>
+</body>
+</html>

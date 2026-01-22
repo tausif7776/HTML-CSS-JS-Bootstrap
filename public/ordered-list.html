@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            list-style: none;
+        }
+        /* li{
+            background-color: gray;
+            color: white;
+            margin-bottom: 5px;
+            padding: 4px;
+            width: 100px;
+        } */
+        li:hover{
+            background-color: brown;
+            cursor: grab;
+        }
+         .options{
+            display: flex;
+        }
+        .options li{
+            margin-right: 50px;
+        }
+        .new-options{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .op-col{
+            columns: 2;
+        }
+            */
+        
+         .scroll{
+            border: 1px solid black;
+            width: 100px;
+            height: 60px;
+            overflow: auto;
+        } 
+       
+    </style>
+</head>
+<body>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>Java Script</li>
+    </ol>
+
+    <ol type="i">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>Java Script</li>
+    </ol>
+
+    <ol type="1" start="101">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>Java Script</li>
+    </ol>
+
+    <ol type="A" start="2" reversed>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>Java Script</li>
+    </ol>
+
+    <ol type="I">
+        <li>HTML
+            <ol type="1">
+                <li>Normal Elements
+                    <ol type="a">
+                        <li>Bold</li>
+                        <li>italics</li>
+                    </ol>
+                </li>
+                 <li>Void Elements</li>
+            </ol>
+        </li>
+        <li>CSS 
+            <ol type="1">
+                <li>Selectors</li>
+                <li>Units</li>
+            </ol>
+        </li>
+       
+    </ol>
+
+    <ol type="1">
+        <li>Question__________________?
+            <ol type="a" class="options">
+                <li>Option -1</li>
+                <li>Option -2</li>
+                <li>Option -3</li>
+                <li>Option -4</li>
+            </ol>
+        </li>
+    </ol>
+
+     <ol type="1">
+        <li>Question__________________?
+            <ol type="a" class="new-options">
+                <li>Option -1</li>
+                <li>Option -2</li>
+                <li>Option -3</li>
+                <li>Option -4</li>
+            </ol>
+        </li>
+    </ol>
+
+     <ol type="1">
+        <li>Question__________________?
+            <ol type="a" class="op-col">
+                <li>Option -1</li>
+                <li>Option -2</li>
+                <li>Option -3</li>
+                <li>Option -4</li>
+            </ol>
+        </li>
+    </ol>  
+
+     <ol type="1" class="scroll">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>Bootstrap</li>
+         <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>Bootstrap</li>
+    </ol> 
+     
+    <ol type="1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>BOOT-STRAP</li>
+        <li>java</li>
+    </ol>
+   
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Booking</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <style>
+    .modal-body select {
+      min-width: 180px;
+    }
+    #poster {
+      object-fit: cover;
+    }
+  </style>
+  <script>
+    function BookClick() {
+      const movie = document.getElementById("lstMovie").value;
+      const cinema = document.getElementById("lstCinema").value;
+      const date = document.getElementById("lstDate").value;
+      const time = document.getElementById("lstTime").value;
+      const seats = document.getElementById("lstSeats").value;
+
+      if (movie === "Select Movie" || cinema === "Select Cinema" || date === "Select Date" || time === "Select Time" || seats === "Select Seats") {
+        alert("Please select all options before booking.");
+        return;
+      }
+
+      document.getElementById("lblMovie").innerText = movie;
+      document.getElementById("lblCinema").innerText = cinema;
+      document.getElementById("lblDate").innerText = date;
+      document.getElementById("lblTime").innerText = time;
+      document.getElementById("lblSeats").innerText = seats;
+
+      const poster = document.getElementById("poster");
+      if (movie === "Horror") {
+        poster.src = "../public/images/movie1.jpg";
+      } else if (movie === "The Batman") {
+        poster.src = "../public/images/movie2.jpg";
+      } else {
+        poster.src = "../public/images/placeholder.jpg";
+      }
+    }
+  </script>
+</head>
+<body class="container-fluid py-4 bg-light">
+
+  <div class="text-center mb-4">
+    <button class="btn btn-primary btn-lg" data-bs-target="#booking" data-bs-toggle="modal">
+      <i class="bi bi-ticket-perforated-fill"></i> Quick Booking
+    </button>
+  </div>
+
+  <div class="card w-50 mx-auto shadow">
+    <div class="card-header bg-dark text-white">
+      <h4 class="mb-0">Booking Summary</h4>
+    </div>
+    <div class="card-body">
+      <img width="100%" height="250" id="poster" src="../public/images/placeholder.jpg" alt="Movie Poster" class="mb-3 rounded">
+
+      <dl class="row">
+        <dt class="col-4">🎬 Movie</dt>
+        <dd class="col-8" id="lblMovie"></dd>
+
+        <dt class="col-4">🏢 Cinema</dt>
+        <dd class="col-8" id="lblCinema"></dd>
+
+        <dt class="col-4">📅 Date</dt>
+        <dd class="col-8" id="lblDate"></dd>
+
+        <dt class="col-4">⏰ Time</dt>
+        <dd class="col-8" id="lblTime"></dd>
+
+        <dt class="col-4">💺 Seats</dt>
+        <dd class="col-8" id="lblSeats"></dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="modal fade" id="booking">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Quick Booking</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md">
+              <select class="form-select" id="lstMovie">
+                <option disabled selected>Select Movie</option>
+                <option>Horror</option>
+                <option>The Batman</option>
+              </select>
+            </div>
+            <div class="col-md">
+              <select class="form-select" id="lstCinema">
+                <option disabled selected>Select Cinema</option>
+                <option>GVK one B'Hills</option>
+                <option>GVK KPHB</option>
+              </select>
+            </div>
+            <div class="col-md">
+              <select class="form-select" id="lstDate">
+                <option disabled selected>Select Date</option>
+                <option>04 September - Today</option>
+                <option>05 September - Tomorrow</option>
+              </select>
+            </div>
+            <div class="col-md">
+              <select class="form-select" id="lstTime">
+                <option disabled selected>Select Time</option>
+                <option>10:30 AM</option>
+                <option>1:25 PM</option>
+              </select>
+            </div>
+            <div class="col-md">
+              <select class="form-select" id="lstSeats">
+                <option disabled selected>Select Seats</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            <div class="col-md">
+              <button class="btn btn-success w-100" onclick="BookClick()" data-bs-dismiss="modal">
+                <i class="bi bi-check2-circle"></i> Book
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

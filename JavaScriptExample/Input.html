@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function bodyload(){
+            str = location.search;
+            document.getElementById("msg").innerHTML = str.substring(str.indexOf("=")+1);
+        }
+
+    </script>
+</head>
+<body onload="bodyload()">
+    <h1>Input Demo</h1>
+    <p>Hello ! <span id="msg"></span></p>
+</body>
+</html>

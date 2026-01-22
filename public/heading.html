@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            /* font-weight: unset;
+            font-size: unset; */
+
+            all: unset;
+        }
+    </style>
+ <script>
+    function bodyload(){
+        var h = document.getElementsByName("h2");
+        alert('Total Number of Heading 2 Styles : ${h.length}');
+    }
+ </script>
+</head>
+<body onload="bodyload()">
+    <h1>Web Technologies</h1>
+    <h2>HTML</h2>
+    It is a markup language
+    <h2>CSS</h2>
+    It defines styles for HTML
+    <br><br>
+    <font size="5"><b>Java Script</b></font>
+    <br><br>
+    It manipulates DOM
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQs - Netflix</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+
+  <style>
+    /* Optional: Image placeholder if you add one later */
+    img {
+      height: 300px;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body class="container py-4">
+  <h1 class="text-center mb-4">Frequently Asked Questions</h1>
+
+  <div class="accordion" id="faqs">
+    <!-- Question 1 -->
+    <div class="accordion-item mb-2">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
+          What is Netflix?
+        </button>
+      </h2>
+      <div id="q1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqs">
+        <div class="accordion-body bg-dark text-white">
+          <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+            documentaries, and more – on thousands of internet-connected devices.</p>
+          <p>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price.
+            New TV shows and movies are added every week!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="accordion-item mb-2">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+          How much does Netflix cost?
+        </button>
+      </h2>
+      <div id="q2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqs">
+        <div class="accordion-body bg-dark text-white">
+          <p>Netflix offers several plans to fit your needs. Prices vary depending on your country and the plan you
+            choose (Basic, Standard, or Premium).</p>
+          <p>All plans give you access to the full Netflix catalog, with no ads and the ability to cancel anytime.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more questions here if needed -->
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
