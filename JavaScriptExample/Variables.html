@@ -15,8 +15,8 @@
 
 
 
-
-<!DOCTYPE html>
+ <!--! Enter Your Mobile -->
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,18 +27,71 @@
             var mobile = document.getElementById("txtMobile").value;
             var mobileError = document.getElementById("mobileError");
             if(mobile==""){
-                mobileError.innerHTML = "Mobile Required";
+                mobileError.innerHTML = "Mobile Required" .bold().italics().fontcolor('red');
             } else {
-                mobileError.innerHTML = "Mobile Verified";
+                mobileError.innerHTML = "Mobile Verified".italics().fontcolor('green');
             }
+        }
+
+        function ChangeCase() {
+            var username = document.getElementById("txtName").value;
+            document.getElementById("txtName").value = username.toUpperCase();
         }
     </script>
 </head>
 <body>
     <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" id="txtName" onkeyup="ChangeCase()" placeholder="User Name in Block Letters"></dd>
         <dt>Enter Mobile</dt>
         <dd><input type="text" id="txtMobile" onblur="VerifyMobile()"></dd>
         <dd id="mobileError"></dd>
     </dl>
 </body>
-</html>
+</html> -->
+
+
+<!--! toLocaleString -->
+<!-- <script>
+    var price = 56700.43;
+    document.write((price).toLocaleString('en-IN', {
+        style: 'currency',
+        currency: 'INR'
+    }));
+</script> -->
+
+
+<!--?! Toggle String single and double-->
+<!-- <script>
+    var link = "<a href='home.html'>Home</a>";
+    document.write(link)
+</script> -->
+
+
+
+<!--! Data Binding Expression-->
+<!-- <script>
+    var uname = prompt("Enter your name");
+    var age = parseInt(prompt("Enter age"));
+    // var msg = "Hello !" + " " + uname + "You will be" + " " +(age+1) + " " + "next year";
+
+    var msg = `Hello ! ${uname} You will be ${age+1} next Year...`;
+
+    document.write(msg);
+</script> -->
+
+
+<!--! Escape Sequence Character-->
+<!-- <script>
+    var path = "D:\\project\\images\\fashion.jpg";
+    document.write(path);
+</script> -->
+
+
+<!-- <script>
+    var str = "Welcome!!!";
+    document.write(str.bold());
+</script> -->
+
+
+

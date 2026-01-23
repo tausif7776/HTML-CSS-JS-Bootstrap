@@ -1,0 +1,52 @@
+<!-- <script>
+    document.write(`Min=${Number.MIN_SAFE_INTEGER} <br> Max=${Number.MAX_SAFE_INTEGER}`);
+</script> -->
+
+<!-- <script>
+    var age = parseInt(prompt("Enter age: "));
+    document.write("Your age will be "+ (age+1)+ " Next Year...");
+</script> -->
+<!-- 
+<script>
+    var rate = parseFloat(prompt("Enter Interest Rate:"));
+    document.write("Interest Rate is increased by 1 = " + (rate+1));
+</script> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function SubmitClick() {
+            var age = document.getElementById("Age").value;
+            var error = document.getElementById("Error");
+            var regExp = /\d{2}/;
+            if (age.match(regExp)) {
+                document.write("Your Age: " +age);
+            } else {
+                error.innerHTML = "Age must be a 2 digit number";
+            }
+
+
+            // if (isNaN(age)) {
+            //     error.innerHTML = "Age must be a number";
+            // } else {
+            //     document.write("Your Age: " +age);
+            // }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Your Age</dt>
+        <dd><input type="text" id="Age"></dd>
+        <dd id="Error"></dd>
+    </dl>
+    <button onclick="SubmitClick()">Submit</button>
+</body>
+</html>

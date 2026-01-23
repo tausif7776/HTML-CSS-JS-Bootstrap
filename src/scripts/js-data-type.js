@@ -11,3 +11,5 @@
 
 //console.error("hello");
 
+let name = "Ahmed";
+console.log(name.charCodeAt(0));

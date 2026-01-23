@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyName() {
+            var username = document.getElementById("txtName").value;
+            var userError = document.getElementById("userError");
+            if (username.length<4) {
+                userError.innerHTML = "Name too short min 4chars required".fontcolor('red');
+            } else {
+                userError.innerHTML = " ";
+            }
+        }
+
+        function VerifyChar() {
+            var username = document.getElementById("txtName").value;
+            var userError = document.getElementById("userError");
+            // if (username.charAt(0) == "a") {
+            //     userError.innerHTML = " ";
+            // } else {
+            //     userError.innerHTML = "Name must start with 'a' character".fontcolor('red');
+            // }
+
+            if (username.charCodeAt(0)>=65 && username.charCodeAt(0)<=90) {
+                userError.innerHTML = " ";
+            } else {
+                userError.innerHTML = "Name must with upperCase letter".fontcolor('red').italics();
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" id="txtName" onblur="VerifyChar()" onkeyup="VerifyName()"></dd>
+        <dd id="userError"></dd>
+    </dl>
+</body>
+</html>
