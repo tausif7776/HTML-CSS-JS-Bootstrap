@@ -11,5 +11,20 @@
 
 //console.error("hello");
 
-let name = "Ahmed";
-console.log(name.charCodeAt(0));
+// let name = "Ahmed";
+// console.log(name.charCodeAt(0));
+
+// let data = "HTML,CSS,JS,React";
+// let ans = data.split(",");
+// console.log(ans);
+
+// let name = "Md, Tausif, Raza";
+// let prt = name.split(",");
+// console.log(prt);
+
+
+// let data = "Ahmed";
+// console.log(data.split(""));
+
+let data = "      welcome           ";
+console.log(data.trim())

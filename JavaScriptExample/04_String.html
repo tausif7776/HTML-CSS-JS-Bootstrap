@@ -1,0 +1,91 @@
+<!-- <script>
+    var msg = "Welcome to javaScript";
+    document.write(`Slice: ${msg.slice(7)} <br>`); 
+    document.write(`Substr: ${msg.substr(7)} <br>`);
+    document.write(`Substring: ${msg.substring(7,0)}`);
+</script> -->
+
+
+<!-- <script>
+    var email = prompt("Enter Your Email: ");
+    var id = email.substring(email.indexOf("@"),0);
+    var domain = email.slice(email.indexOf("@")+1);
+    document.write(`Your id : ${id} <br> Domain : ${domain}`);
+</script> -->
+
+
+
+<!--! Split() about it Destructuring Technique -->
+<!-- <script>
+    var contacts = "John-8797654525, david-6548796525";
+    var [john, david] = contacts.split(',');
+    document.write(john+ "<br>");
+    document.write(david);
+</script> -->
+
+
+<!--?!  trim() method in String-->
+<!-- <script>
+    var otp = prompt("Enter OTP : ");
+    if (otp.trim() == "3456") {
+        document.write("Success...".fontcolor('green'));
+    } else {
+        document.write("Invalid OTP".fontcolor('red'));
+    }
+</script> -->
+
+
+<!--?!  match() method in String-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function SetMeter(min, max, value) {
+            var status = document.getElementById("status");
+            status.min = min;
+            status.max = max;
+            status.value = value;
+        }
+
+        function VerifyPassword() {
+            var password = document.getElementById("txtPwd").value;
+            var regExp = /(?=.*[A-Z])\w{4,15}/;
+            var pwdError = document.getElementById("pwdError");
+            if(password.match(regExp)) {
+                pwdError.innerHTML = "Strong Password".fontcolor('green').italics();
+                SetMeter(1, 100, 100);
+            } else {
+                // pwdError.innerHTML = "Weak Password 1 upperCase letter required".fontcolor('red').italics();
+                if (password.length<4) {
+                    pwdError.innerHTML = "Poor Password-min 4 characters required".fontcolor('red');
+                    SetMeter(1, 100, 30);
+                } else {
+                    pwdError.innerHTML = "Weak Password-1 must be uppercase letter".fontcolor('gold');
+                    SetMeter(1, 100, 70);
+                }
+            }
+        }
+    </script>
+    <style>
+        meter {
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>Your Password</dt>
+        <dd>
+            <input type="password" id="txtPwd" onkeyup="VerifyPassword()">
+        </dd>
+        <dd>
+            <meter value="1" id="status" min="1" max="100"></meter>
+        </dd>
+        <dd id="pwdError"></dd>
+    </dl>
+</body>
+</html>
