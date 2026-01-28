@@ -42,3 +42,82 @@
     }
 </script> -->
 
+<!--! Array Create and typeOf -->
+<!-- <script>
+    var values = [10, true, "A"];
+    for (var property in values) {
+        document.write(`${property}[${typeof property}] : ${values[property]} [${typeof values}]`);
+    }
+</script> -->
+
+
+<!-- <script>
+    var values = [12, "Ahmed", ["Delhi", "HYD"], true, function() {document.write("Hello,World")}];
+
+    document.write(values[2][1]);
+    values[4]();
+</script> -->
+
+<!--! IIFE-->
+<!-- <script>
+    (
+    function() {
+        document.write("Welcome, to Array");
+    })();
+    
+</script> -->
+
+<!--! Map Using-->
+<!-- <script>
+    let Fruits = ["Apple", "Mango", "Banana", "Guava", "Grapes"];
+    Fruits.map(function(Fruit){
+        document.write(`<li>${Fruit}</li>`)
+    });
+</script> -->
+<!-- <script>
+    let Fruits = ["Apple", "Mango", "Banana", "Guava", "Grapes"];
+    Fruits.forEach(function(Fruit, index){
+        document.write(`<li>${Fruit}[${index}]</li>`)
+    });
+</script> -->
+
+
+<!--! find(), filter()-->
+<!-- <script>
+    var sales = [2300, 4000, 54300, 12000];
+    let result = sales.find(function(value){
+        return value > 7000;
+    });
+    document.write(result);
+    var sales = [100, 200, 1300, 1700];
+    let result = sales.filter(function(value){
+        return value > 900;
+    });
+    document.write(result);
+</script> -->
+
+
+<!--! for in and for of-->
+<!-- <script>
+    let sales = [2000, 32000, 43000, 56000, 76000];
+    for (let property in sales) {
+        document.write(property+ "<br>");
+    }
+    for (let property of sales) {
+        document.write(property+" ");
+    }
+</script> -->
+
+
+
+<!--! Destructuring Array-->
+<!-- <script>
+    let details = [1, "TV", true, ["Delhi", "Mumbai"]];
+    let[id, name, stock, cities] = details;
+    document.write(`
+        id : ${id} <br>
+        name : ${name} <br>
+        stock : ${stock} <br>
+        cities : ${cities.toString()}
+    `);
+</script> -->

@@ -48,6 +48,27 @@
 // }
 // console.log(user[userId]);
 
+// let arr = [10, 20, 30, 40];
+// console.log(typeof arr);
+// console.log(arr[0]);
+
+
+// let arr = [];
+// arr[0] = 12;
+// arr[1] = true;
+// arr[2] = "Tausif";
+// arr[3] = function() {
+//     console.log("Hello");
+// }
+// console.log(arr);
+
+// let arr = ["All", "Electronics", "Footwear"];
+// console.log(arr.join("-->"));
+
 let arr = [10, 20, 30, 40];
-console.log(arr);
-console.log(arr[0]);
+let[a, b, c, d] = arr;
+// console.log("a="+a+"\nb="+b+"\nc="+c+"\nd="+d);
+console.log("a = " +a);
+console.log("b = " +b);
+console.log("c = " +c);
+console.log("d = " +d);
