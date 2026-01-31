@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flipkart Mobiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f3f6;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            width: 260px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+        }
+        .price {
+            color: green;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .rating {
+            background: green;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>📱 Flipkart Mobile Store</h2>
+
+<div class="container" id="mobileContainer">
+    <!-- Cards will be added by JS -->
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

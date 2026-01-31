@@ -1,0 +1,109 @@
+<!-- <script>
+    var product = {
+        Name: "Men's Clothes",
+        Price: 799,
+        Quantity: 3,
+        Total: function() {
+            return this.Quantity * this.Price
+        },
+        print: function() {
+            document.write(`Name = ${this.Name}<br> Price = ${this.Price}<br> Quantity = ${this.Quantity}<br> Total =  ${this.Total()}`);
+        }
+    }
+    product.print();
+</script> -->
+
+
+<!--!!!! Data Fetch Object !!!!******??????--> 
+<!-- <script>
+    fetch("https://fakestoreapi.com/products/1")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(product) {
+        for (var property in product) {
+            document.write(`${property}<br>`);
+        }
+    })
+</script> -->
+
+
+<!--!!!   Using Object keys()-->
+<!-- <script>
+    fetch("https://fakestoreapi.com/products/1")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(product) {
+        Object.keys(product).map(function(key) {
+            document.write(key+"<br>")
+        })
+    })
+</script> -->
+
+
+<!--!!! typeof object-->
+<!-- <script>
+    fetch("https://fakestoreapi.com/products/1")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(product) {
+        Object.keys(product).map(function(key) {
+            document.write(`${key} [${typeof product[key]}]<br>`);
+        })
+    })
+</script> -->
+
+
+<!--!!! Count of key in Object-->
+<!-- <script>
+    fetch("https://fakestoreapi.com/products/1")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(product) {
+            document.write(`Total Number of Keys : ${Object.keys(product).length}`);
+    })
+</script> -->
+
+
+<!--!!! Key Present Or Not-present -->
+<!-- <script>
+    fetch("https://fakestoreapi.com/products/1")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(product) {
+            document.write(`Is fakeStore product having stock details ? ${"stock" in product} <br>`); 
+            document.write(`Is fakeStore product having price details ? ${"price" in product}`);
+    })
+</script> -->
+
+<!--!!! delete object -->
+<!-- <script>
+    fetch("https://fakestoreapi.com/products/1")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(product) {
+        delete product.price;
+        document.write(`Title : ${product.title} <br>Price :${product.price}`);
+    })
+</script> -->
+
+
+<!--!!!! MAP in js-->
+<!-- <script>
+    var topics = new Map();
+    topics.set(1, "I want to say that");
+    topics.set("categories", ["Delhi", "Sitamarhi"]);
+    for(var item of topics.entries()) {
+        document.write(item+ "<br>")
+    }
+
+</script> -->
+
+
+<!--!!! Date and Time -->
+

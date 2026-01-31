@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Clock</title>
+
+<script>
+    var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    function SetClock() {
+        var now = new Date();
+        document.getElementById("date").innerHTML =
+            weekdays[now.getDay()] + " " +
+            now.getDate() + ", " +
+            months[now.getMonth()] + " " +
+            now.getFullYear();
+    }
+
+    function SetTimer() {
+        var now = new Date();
+        document.getElementById("time").innerHTML =
+            now.toLocaleTimeString("en-US", {
+                hour: "numeric",
+                minute: "numeric",
+                second: "numeric",
+                hour12: true
+            });
+    }
+
+     function SetStatus() {
+        var now = new Date();
+        var hrs = now.getHours();
+        var status = document.getElementById("status");
+
+        if (hrs >= 5 && hrs < 12) {
+            status.innerHTML = "🌅☀️ Good Morning! Have a Fresh Start 🚀✨";
+        } 
+        else if (hrs >= 12 && hrs < 17) {
+            status.innerHTML = "🌞😄 Good Afternoon! Keep Going Strong 💪🔥";
+        } 
+        else if (hrs >= 17 && hrs < 21) {
+            status.innerHTML = "🌇🌆 Good Evening! Relax & Recharge ☕🌿";
+        } 
+        else {
+            status.innerHTML = "🌙✨ Good Night! Sweet Dreams 😴💤";
+        }
+    }
+
+    function bodyload() {
+        SetClock();
+        SetTimer();
+        SetStatus();
+
+        setInterval(function () {
+            SetClock();
+            SetTimer();
+            SetStatus();
+        }, 1000);
+    }
+</script>
+
+<style>
+    body {
+        background-color: #111;
+        color: white;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 50px;
+    }
+    #date {
+        font-size: 24px;
+    }
+    #time {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    #status {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: green;
+}
+</style>
+</head>
+
+<body onload="bodyload()">
+    <p id="date"></p>
+    <p id="time"></p>
+    <p id="status"></p>
+</body>
+</html>

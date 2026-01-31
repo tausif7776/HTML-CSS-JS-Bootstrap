@@ -13,11 +13,43 @@
                 document.querySelector("ol").appendChild(li);
 
 
+                <!--?! Create dropdown-->
                 var option = document.createElement("option");
+                option.text = category;
+                option.value = category;
+                document.querySelector("select").appendChild(option);
+
                 
+
+                //! checkbox using this ?????
+                var ul_li = document.createElement("li");
+                var label = document.createElement("label");
+                var input = document.createElement("input");
+                input.type = "checkbox";
+                input.value = category;
+                label.innerHTML = category;
+                
+                
+                ul_li.appendChild(input);
+                ul_li.appendChild(label);
+                document.querySelector("ul").appendChild(ul_li);
+
+                
+            
+                var tr = document.createElement("tr");
+                var td = document.createElement("td");
+                td.innerHTML = category;
+                tr.appendChild(td);
+                document.querySelector("tbody").appendChild(tr);
             })
         }
     </script>
+
+    <style>
+        ul {
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
     <button onclick="LoadClick()">Click Me</button>
@@ -25,5 +57,17 @@
 
     </ol>
     <select></select>
+
+    <ul></ul>
+
+    <table border="1" width="200">
+        <thead>
+            <tr>
+                <th>categories</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
 </body>
 </html>
+
